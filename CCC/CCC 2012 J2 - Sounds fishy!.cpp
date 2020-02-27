@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int a; int b; int c; int d;
+    cin >> a >> b >> c >> d;
+    if (a < b && b < c && c < d) {
+        cout << "Fish Rising";
+    } else if (a > b && b > c && c > d) {
+        cout << "Fish Diving";
+    } else if (a == b && b == c && c == d) {
+        cout << "Fish At Constant Depth";
+    } else {
+        cout << "No Fish";
+    }
+}
